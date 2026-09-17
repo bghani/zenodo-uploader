@@ -9,9 +9,9 @@ description = "Upload large files and directories to Zenodo via REST API with re
 readme = "README.md"
 requires-python = ">=3.8.1"
 authors = [
-    {name = Burooj Ghani},
+    {name = "Burooj Ghani"},
 ]
-license = {text = "MIT"}
+license = "MIT"
 keywords = [
     "zenodo",
     "research-tools",
@@ -27,7 +27,6 @@ classifiers = [
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
-    "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
     "Intended Audience :: Science/Research",
     "Topic :: Scientific/Engineering :: Bio-Informatics",
@@ -49,7 +48,7 @@ dev = [
 ]
 
 [project.scripts]
-zupload = "zenodo_uploader.cli:main"
+zupload = "zupload.cli:main"
 
 [project.urls]
 Homepage = "https://github.com/bghani/zenodo-uploader"
@@ -58,7 +57,7 @@ Repository = "https://github.com/bghani/zenodo-uploader.git"
 Issues = "https://github.com/bghani/zenodo-uploader/issues"
 
 [tool.setuptools]
-packages = ["zenodo_uploader"]
+packages = ["zupload"]
 
 [tool.black]
 line-length = 88
