@@ -59,64 +59,64 @@ Or pass it each time with `--api-key`.
 
 
 ## Usage
-
-### Command Line (CLI) **Two workflows: Choose what works for you**
-
-### Workflow 1: Upload first, add metadata later (recommended for beginners)
-
+ 
+### Command Line (CLI) — Two workflows: Choose what works for you
+ 
+#### Workflow 1: Upload first, add metadata later (recommended for beginners)
+ 
 ```bash
 # 1. Upload your file/directory
 zupload --file dataset.zip
-
+ 
 # Output: Record ID: 1234567
 # A new draft is automatically created on Zenodo
-
+ 
 # 2. Visit https://zenodo.org/deposit/1234567
 # 3. Add title, authors, description, keywords
 # 4. Click "Publish"
 ```
-
-This is the simplest way. The tool creates a draft for you automatically. You'll get a Zenodo URL. Visit it to add metadata (title, authors, description) and click Publish.
-
-### Workflow 2: Create draft first, then upload files to it
-
+ 
+This is the simplest way. The tool creates a draft for you automatically.
+ 
+#### Workflow 2: Create draft first, then upload files to it
+ 
 ```bash
 # 1. Go to https://zenodo.org and create a new draft (optional)
 # 2. Note the Record ID from the URL
 # 3. Upload to that draft
 zupload --file part1.zip --record-id 1234567
 zupload --file part2.zip --record-id 1234567
-
+ 
 # 4. Visit https://zenodo.org/deposit/1234567
 # 5. Click "Publish"
 ```
-
+ 
 Use this if you want to add multiple files or have already created a draft on Zenodo.
-
+ 
 ---
-
-### Common commands
-
+ 
+#### Common commands
+ 
 ```bash
 # Basic upload (creates new draft automatically)
 zupload --file dataset.zip
-
+ 
 # Upload directory (automatically compresses to .zip)
 zupload --file ./my-data/
-
+ 
 # Upload to existing draft (add more files)
 zupload --file another-file.zip --record-id 1234567
-
+ 
 # Customize retries for unstable networks
 zupload --file large.zip --retries 10 --retry-delay 20
-
+ 
 # Get help
 zupload --help
 ```
-
+ 
 See [FAQ](#faq) below for explanations of what each option does.
-
-## Python API (for developers)
+ 
+### Python API (for developers)
  
 You can also use `zupload` as a Python library in your own code:
  
