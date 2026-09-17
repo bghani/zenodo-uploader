@@ -230,7 +230,7 @@ A: Zenodo keeps what was uploaded. Re-run the same command and it should resume 
 ### Large files
 
 **Q: Can I upload files larger than 5GB?**  
-A: Yes! That's the whole point of this tool. Default timeout is 2 hours; that covers most large uploads.
+A: Yes! That's the whole point of this tool.
 
 **Q: How long does a 10GB upload take?**  
 A: Depends on your internet speed. At 10 Mbps: ~2-3 hours. The progress bar shows real-time speed and ETA.
