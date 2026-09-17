@@ -7,7 +7,7 @@ name = "zenodo-uploader"
 version = "1.0.0"
 description = "Upload large files and directories to Zenodo via REST API with retry logic and progress tracking"
 readme = "README.md"
-requires-python = ">=3.8"
+requires-python = ">=3.8.1"
 authors = [
     {name = "Contributors"},
 ]
