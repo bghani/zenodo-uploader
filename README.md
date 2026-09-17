@@ -317,7 +317,7 @@ Adapted from a basic version of a code by Pranav Durai
 
 ## License
 
-MIT License — see LICENSE file for details.
+MIT License — see [LICENSE](https://github.com/bghani/zenodo-uploader/blob/main/LICENSE) file for details.
 
 ---
 
