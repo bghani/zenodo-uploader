@@ -116,7 +116,7 @@ zupload --help
  
 See [FAQ](#faq) below for explanations of what each option does.
  
-### Python API (for developers)
+### Python API 
  
 You can also use `zupload` as a Python library in your own code:
  
