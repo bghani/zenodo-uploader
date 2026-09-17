@@ -1,2 +1,2 @@
 [console_scripts]
-zupload = zenodo_uploader.cli:main
+zupload = zupload.cli:main

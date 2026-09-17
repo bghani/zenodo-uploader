@@ -19,7 +19,7 @@ Upload large files and directories to Zenodo via REST API, with built-in retry l
 ### Via pip (recommended)
 
 ```bash
-pip install zenodo-uploader
+pip install zupload
 ```
 
 ### From source
@@ -60,7 +60,7 @@ Or pass it each time with `--api-key`.
 
 ## Usage
 
-**Two workflows: Choose what works for you**
+### Command Line (CLI) **Two workflows: Choose what works for you**
 
 ### Workflow 1: Upload first, add metadata later (recommended for beginners)
 

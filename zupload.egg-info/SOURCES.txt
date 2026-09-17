@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+zupload/__init__.py
+zupload/cli.py
+zupload/exceptions.py
+zupload/uploader.py
+zupload/utils.py
+zupload.egg-info/PKG-INFO
+zupload.egg-info/SOURCES.txt
+zupload.egg-info/dependency_links.txt
+zupload.egg-info/entry_points.txt
+zupload.egg-info/requires.txt
+zupload.egg-info/top_level.txt

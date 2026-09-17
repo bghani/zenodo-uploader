@@ -1,1 +1,1 @@
-zenodo_uploader
+zupload

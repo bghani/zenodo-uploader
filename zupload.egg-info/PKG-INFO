@@ -2,9 +2,9 @@ Metadata-Version: 2.4
 Name: zupload
 Version: 1.0.0
 Summary: Upload large files and directories to Zenodo via REST API with retry logic and progress tracking
-Home-page: https://github.com/burooj-ghani/zenodo-uploader
+Home-page: https://github.com/bghani/zenodo-uploader
 Author: Burooj Ghani
-License: MIT
+License-Expression: MIT
 Project-URL: Homepage, https://github.com/bghani/zenodo-uploader
 Project-URL: Documentation, https://github.com/bghani/zenodo-uploader#readme
 Project-URL: Repository, https://github.com/bghani/zenodo-uploader.git
@@ -16,12 +16,11 @@ Classifier: Programming Language :: Python :: 3.9
 Classifier: Programming Language :: Python :: 3.10
 Classifier: Programming Language :: Python :: 3.11
 Classifier: Programming Language :: Python :: 3.12
-Classifier: License :: OSI Approved :: MIT License
 Classifier: Operating System :: OS Independent
 Classifier: Intended Audience :: Science/Research
 Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
 Classifier: Topic :: Software Development :: Libraries :: Python Modules
-Requires-Python: >=3.8
+Requires-Python: >=3.8.1
 Description-Content-Type: text/markdown
 License-File: LICENSE
 Requires-Dist: requests>=2.28.0
