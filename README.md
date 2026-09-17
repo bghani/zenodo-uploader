@@ -6,14 +6,14 @@ Upload large files and directories to Zenodo via REST API, with built-in retry l
 
 ## Features
 
-✅ **Large file support** — Upload files > 5GB reliably  
-✅ **Directory compression** — Automatically zip directories before upload  
-✅ **Progress tracking** — Real-time progress bar with speed and ETA  
-✅ **Retry logic** — Configurable retries with exponential backoff  
-✅ **MD5 verification** — Ensure data integrity after upload  
-✅ **Rich error messages** — Know exactly what failed and why  
-✅ **Dual API** — Use as CLI tool or Python library  
-✅ **Flexible auth** — Environment variable or command-line API key  
+ **Large file support** — Upload files > 5GB reliably  
+ **Directory compression** — Automatically zip directories before upload  
+ **Progress tracking** — Real-time progress bar with speed and ETA  
+ **Retry logic** — Configurable retries with exponential backoff  
+ **MD5 verification** — Ensure data integrity after upload  
+ **Rich error messages** — Know exactly what failed and why  
+ **Dual API** — Use as CLI tool or Python library  
+ **Flexible auth** — Environment variable or command-line API key  
 
 ## Installation
 
