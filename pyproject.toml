@@ -1,0 +1,75 @@
+[build-system]
+requires = ["setuptools>=65.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zenodo-uploader"
+version = "1.0.0"
+description = "Upload large files and directories to Zenodo via REST API with retry logic and progress tracking"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [
+    {name = "Contributors"},
+]
+license = {text = "MIT"}
+keywords = [
+    "zenodo",
+    "research-tools",
+    "data-upload",
+    "file-upload",
+    "bioacoustics",
+    "biodiversity",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+dependencies = [
+    "requests>=2.28.0",
+    "tqdm>=4.64.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "black>=23.0",
+    "flake8>=6.0",
+    "mypy>=1.0",
+]
+
+[project.scripts]
+zupload = "zenodo_uploader.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/bghani/zenodo-uploader"
+Documentation = "https://github.com/bghani/zenodo-uploader#readme"
+Repository = "https://github.com/bghani/zenodo-uploader.git"
+Issues = "https://github.com/bghani/zenodo-uploader/issues"
+
+[tool.setuptools]
+packages = ["zenodo_uploader"]
+
+[tool.black]
+line-length = 88
+target-version = ["py38", "py39", "py310", "py311"]
+
+[tool.isort]
+profile = "black"
+line_length = 88
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false

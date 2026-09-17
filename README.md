@@ -26,7 +26,7 @@ pip install zenodo-uploader
 ### From source
 
 ```bash
-git clone https://github.com/burooj-ghani/zenodo-uploader.git
+git clone https://github.com/bghani/zenodo-uploader.git
 cd zenodo-uploader
 pip install -e .
 ```
