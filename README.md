@@ -304,7 +304,7 @@ If you hit these, you'll get a clear error message.
 ## Credits
 
 Adapted from a basic version of a code by Pranav Durai  
-(Published on [https://github.com/zenodo/zenodo/issues/2514] in July 2026)
+(Published on https://github.com/zenodo/zenodo/issues/2514 in July 2026)
 
 **Adaptations in this version:**
 - Enhanced error handling and diagnostics
