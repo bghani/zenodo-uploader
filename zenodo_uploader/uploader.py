@@ -1,11 +1,11 @@
 """
 Core Zenodo uploader API.
 
-Original code by Pranav Durai
-https://[forum-link-here]
+Original code by Pranav Durai taken
+from: https://github.com/zenodo/zenodo/issues/2514 on 17 Sep 2026.
 
-Adapted and extended with enhanced error handling, directory compression,
-and Python API support.
+The code was adapted and extended with enhanced error handling, 
+directory compression, and Python API support.
 """
 
 import time
@@ -62,7 +62,7 @@ class ZenodoUploader:
 
     def _validate_token(self) -> bool:
         """
-        Validate the API token by checking user info endpoint.
+        Validate the API token by checking deposit endpoint.
 
         Returns:
             True if token is valid.
@@ -72,7 +72,7 @@ class ZenodoUploader:
         """
         try:
             response = requests.get(
-                f"{self.BASE_URL}/user",
+                f"{self.BASE_URL}/deposit/depositions",
                 headers=self._get_headers(),
                 timeout=self.TIMEOUT,
             )
