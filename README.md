@@ -23,8 +23,19 @@ Upload large files and directories to Zenodo via REST API, with built-in retry l
 pip install zenodo-uploader
 ```
 
-### From source
-
+### From source (recommended for development)
+ 
+**Option 1: Using `uv` (fastest)**
+ 
+```bash
+git clone https://github.com/bghani/zenodo-uploader.git
+cd zenodo-uploader
+uv sync
+source .venv/bin/activate  # on Windows: .venv\Scripts\activate
+```
+ 
+**Option 2: Using `pip`**
+ 
 ```bash
 git clone https://github.com/bghani/zenodo-uploader.git
 cd zenodo-uploader
@@ -53,22 +64,9 @@ export ZENODO_API_KEY="your-api-key-here"
 zupload --file my-dataset.zip --api-key "your-api-key-here"
 ```
 
-### 3. Upload
-
-```bash
-# Upload a single file
-zupload --file my-dataset.zip
-
-# Upload a directory (automatically compressed)
-zupload --file /path/to/my-data/
-
-# Upload to an existing draft (to add more files)
-zupload --file another-file.zip --record-id 1234567
-```
-
 ## Usage
 
-### CLI
+### CLI (from terminal directly)
 
 ```bash
 # Basic upload
