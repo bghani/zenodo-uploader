@@ -245,7 +245,7 @@ A: Currently Zenodo only. The code is modular; contributing support for other re
 ## Credits & Attribution
 
 **Original code** by Pranav Durai  
-(Published on [forum/community], 12.07.2026)
+(Published on [https://github.com/zenodo/zenodo/issues/2514])
 
 **Adaptations in this version:**
 - Enhanced error handling and diagnostics
