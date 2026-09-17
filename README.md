@@ -65,8 +65,10 @@ Or pass it each time with `--api-key`.
 #### Workflow 1: Upload first, add metadata later (recommended for beginners)
  
 ```bash
-# 1. Upload your file/directory
+# 1. Upload your file/directory 
 zupload --file dataset.zip
+zupload --file dataset # if a directory is passed, automatically compresses it to .zip before upload
+zupload --file dataset.csv
  
 # Output: Record ID: 1234567
 # A new draft is automatically created on Zenodo
