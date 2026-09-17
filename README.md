@@ -57,20 +57,6 @@ export ZENODO_API_KEY="your-api-key-here"
 
 Or pass it each time with `--api-key`.
 
-### 3. Upload
-
-```bash
-# Upload a file
-zupload --file dataset.zip
-
-# Upload a directory (automatically compressed to .zip)
-zupload --file ./my-data/
-
-# Add file to an existing draft
-zupload --file another-file.zip --record-id 1234567
-```
-
-Done! You'll get a Zenodo URL. Visit it to add metadata (title, authors, description) and click Publish.
 
 ## Usage
 
@@ -90,7 +76,7 @@ zupload --file dataset.zip
 # 4. Click "Publish"
 ```
 
-This is the simplest way. The tool creates a draft for you automatically.
+This is the simplest way. The tool creates a draft for you automatically. You'll get a Zenodo URL. Visit it to add metadata (title, authors, description) and click Publish.
 
 ### Workflow 2: Create draft first, then upload files to it
 
