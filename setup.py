@@ -6,7 +6,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
-    name="zenodo-uploader",
+    name="zupload",
     version="1.0.0",
     author="Contributors",
     description="Upload large files and directories to Zenodo via REST API with retry logic and progress tracking",

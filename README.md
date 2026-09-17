@@ -116,6 +116,30 @@ zupload --help
 
 See [FAQ](#faq) below for explanations of what each option does.
 
+## Python API (for developers)
+ 
+You can also use `zupload` as a Python library in your own code:
+ 
+```python
+from zupload import ZenodoUploader
+ 
+# Create uploader instance
+uploader = ZenodoUploader(api_token="your-token")
+ 
+# Upload a file
+result = uploader.upload("dataset.zip")
+print(f"Record ID: {result['record_id']}")
+print(f"URL: {result['url']}")
+ 
+# Upload directory (auto-compressed)
+uploader.upload("./my-data/", compress_dir=True)
+ 
+# Add file to existing draft
+uploader.upload("part2.zip", record_id="1234567")
+```
+ 
+**For detailed examples, error handling, and advanced usage, see [DEVELOPMENT.md](DEVELOPMENT.md).**
+
 ## Error Messages & Solutions
 
 If something goes wrong, `zupload` tells you what happened. Here are the most common ones:

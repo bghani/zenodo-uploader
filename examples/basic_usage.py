@@ -4,7 +4,7 @@ Example: Basic usage of zenodo-uploader Python API.
 
 import os
 from pathlib import Path
-from zenodo_uploader import ZenodoUploader, NetworkError, AuthenticationError
+from zupload import ZenodoUploader, NetworkError, AuthenticationError
 
 # Get API key from environment
 api_key = os.getenv("ZENODO_API_KEY")
